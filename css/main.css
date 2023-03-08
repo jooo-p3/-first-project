@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 200vh;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+/*--Header--*/
+.header-line-one{
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    background-color: #fff;
+}
+.header-line-one i, .header-line-one div{
+    font-size: 1.5rem;
+    color: #252525;
+}
+.header-line-one i{
+    font-size: 1.8rem;
+    color: #024089;
+}
+.header-line-two{
+    padding: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: #fad910;
+}
+.header-logo a{
+    font-size: 4rem;
+    color: #252525;
+}
+.header-search-bar{
+    width: 35%; 
+}
+.header-search-bar form{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+    background-color: #fff;
+}
+.header-search-bar input{
+    width: 100%;
+    font-size: 1.6rem;
+    color: #555555;
+    background: none;
+}
+.header-search-bar button{
+    font-size: 1.7rem;
+    color: #fa841a;
+    background-color: #fff;
+    cursor: pointer;
+}
+.header-search-bar button:hover{
+    color: #f4a300;
+}
+.header-buttons, .user-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.user-account{
+    gap: 0.6rem !important;
+}
+.user-account i{
+    font-size: 2rem;
+    color: #024089;
+}
+.user-account a{
+    font-size: 1.35rem;
+    color: #252525;
+    text-decoration: underline;
+}
+.header-buttons-wrapper{
+    display: flex;
+    gap: 1.3rem;
+}
+.header-buttons-wrapper i{
+    font-size: 1.8rem;
+    color: #024089;
+}
+.header-buttons-wrapper i:hover{
+    color: #004da9;
+}
+.header-line-three{
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fad910;
+}
+.header-line-three ul{
+    display: flex;
+    gap: 3rem;
+}
+.header-line-three a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #252525;
+}
+/*--Slideshow--*/
+.swiper{
+    width: 100%;
+    height: 60vh;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination-bullet-active{
+    background-color: #eceeef;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #fad910;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: #ffc519c3;
+}
+/*--Main Content--*/
+.title{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h2{
+    position: relative;
+    font-size: 2.7rem;
+    color: #5a5a5a;
+    font-weight: 400;
+}
+.title h2::before, .title h2::after{
+    width: 40rem;
+    height: 0.1rem;
+    position: absolute;
+    right: 110%;
+    bottom: 42%;
+    content: "";
+    background-color: #eceeef;
+}
+.title h2::after{
+    left: 110%;
+}
+.showcase{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products{
+    width: 70%;
+    padding: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.product-card{
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #19161633;
+    border-radius: 1rem;
+}
+.product-info{
+    margin: 3rem 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.product-info h3, .product-info span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #252525;
+}
+.product-info span{
+    color: #19161699;
+}
+.purchase-btn{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    background-color: #fad910;
+}
+.purchase-btn:hover{
+    background-color: #ffc519c3;
+}
+.footer-wrapper{
+    display: flex;
+    padding: 3.1rem 10rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fad910;
+}
+.footer-logo a{
+    font-size: 4rem;
+    color: #252525;
+}
+.footer-navbar ul{
+    display: flex;
+    gap: 5rem;
+}
+.footer-navbar a{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #252525;
+}
+.social-media-buttons{
+    display: flex;
+    gap: 2rem;
+}
+.social-media-buttons i{
+    font-size: 2.5rem;
+    color: #024089;
+}
+.social-media-buttons i:hover{
+    color: #004da9;
+}
